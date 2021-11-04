@@ -397,6 +397,21 @@
 // quality=========================
 
 .quality{
+	text-align: center;
+	&__title{
+		font-size: 48px;
+		line-height: 100px;
+		color: #000;
+		text-transform: uppercase;
+	}
+	&__text{
+		display: inline-block;
+		width: 590px;
+		font-size: 15px;
+		line-height: 25px;
+		color: #636262;
+		margin-bottom: 60px;
+	}
 	padding-top: 218px;
 	padding-bottom: 155px;
 	&__popups{
@@ -607,3 +622,58 @@
 		
 	}
 }
+
+// ====================++++++++++++++++
+
+
+.social_icon{
+	position: absolute;
+	right: 20px;
+	bottom: 80px;
+	transition: all .9s;
+	transform: translateX(250px);
+	opacity: 0;
+	visibility: hidden;
+	background-color: rgba(255, 255, 255, 0.05);
+	padding-bottom: 40px;
+		
+}
+.social_icon.open{
+	transform: translateX(0px);
+	opacity: 1;
+	visibility: visible;
+	background-color: transparent;
+}
+
+
+
+.social_icon{
+	float: left;
+	font-size: 0;
+	
+}
+.social_icon a{
+	display: inline-block;
+	vertical-align: top;
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+	background-image: url('../images/social_icon.png');
+	margin-right: 14px;
+}
+.social_icon .fb {
+	background-position: 0 0;
+}
+.social_icon .tw {
+	background-position: -48px 0 ;
+}
+.social_icon .other{
+	background-position: -98px 0;
+}
+.social_icon .tube{
+	background-position: -148px 0;
+}
+.social_icon .rss{
+	background-position: -198px 0;
+}
+

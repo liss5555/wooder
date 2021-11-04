@@ -4,7 +4,17 @@ $(function () {
 	});
 	
 	$('a.fancybox').fancybox({ type: "iframe" }); 
+
+	$('.header__share').on('click', function(){
+		$('.social_icon').toggleClass('open');
+	});
+
+	// $('.header').on('click', function(){
+	// 	$('.social_icon').removeClass('open');
+	// });
+
 });
+
 
 
 
